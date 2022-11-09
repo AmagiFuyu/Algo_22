@@ -7,7 +7,7 @@ int main(){
 	cin>>uts;
 	cout<<"uas : ";
 	cin>>uas;
-	nilai = uts + uas / 2;
+	nilai = (uts + uas) / 2;
 	if(nilai >= 60){
 		cout<<"lulus"<<endl;
 	}else{
