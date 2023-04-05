@@ -6,6 +6,7 @@ struct Mahasiswa{
 	string Nama;
 	string mk;
 	int nilai;
+    char huruf;
 };
 
 int main(){
@@ -22,18 +23,20 @@ int main(){
 		cout<<"Nilai	: ";
 		cin>>Mhs[i].nilai;
 		cout<<endl;
-	}
+	
 	switch (Mhs[i].nilai){
-		case 0 ... 45: cout<<"E"; break;
-		case 46 ... 55: cout<<"D"; break;
-		case 56 ... 62: cout<<"C";break;
-		case 63 ... 79: cout<<"B"; break;
-		case 80 ... 100: cout<<"A"; break;
+		case 0 ... 45: Mhs[i].huruf='E'; break;
+		case 46 ... 55: Mhs[i].huruf='D'; break;
+		case 56 ... 62: Mhs[i].huruf='C';break;
+		case 63 ... 79: Mhs[i].huruf='B'; break;
+		case 80 ... 100: Mhs[i].huruf='A'; break;
 	}
+    }
 	for (i=0; i<3; i++){
 		cout<<"\n\nNIM	: "<<Mhs[i].Nim;
 		cout<<"\n\nNama	: "<<Mhs[i].Nama;
 		cout<<"\n\nMatkul	: "<<Mhs[i].mk;
 		cout<<"\n\nIPK	: "<<Mhs[i].nilai;
+        cout<<"\n\nNilai Huruf : " << Mhs[i].huruf;
 	}
 }

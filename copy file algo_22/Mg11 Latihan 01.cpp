@@ -1,10 +1,12 @@
 #include <iostream>
 using namespace std;
 
-void hitungberatbadanideal(string gender, float bb, float tb, float bb_ideal){
-	if (gender == "L"){
+void hitungberatbadanideal(float bb, float tb){
+	string gender;
+	float bb_ideal;
+	if (gender == "L" || 'l'){
 		bb_ideal = (tb - 100) - ((tb - 100)*0.1);
-	}else if (gender =="P"){
+	}else if (gender =="P" || 'p'){
 		(tb - 100) - ((tb - 100)*0.15);
 	}else {
 		cout<<"Gender Salah";
