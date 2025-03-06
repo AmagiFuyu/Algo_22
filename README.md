@@ -1,2 +1,2 @@
 # Algo_22
-print "Hello IL"
+print "Hello C++"
